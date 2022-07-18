@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JQuery Test</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      //   $(document).ready(function () {
+      //     $("p").click(function () {
+      //       $(this).hide();
+      //     });
+      //   });
+
+      //   $(document).ready(function () {
+      //     $("button").on("click", function () {
+      //       $("#test").hide();
+      //     });
+      //   });
+
+      $(document).ready(function () {
+        $("#btn1").click(function () {
+          $("#test1").text("Hello World!");
+        });
+
+        $("#btn2").on("click", function () {
+          $("#test2").html("<b>Hello World!</b>");
+        });
+
+        $("#btn3").click(function () {
+          $("#test3").val("Dolly Duck");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <!-- <p>If you click me,I will disappear</p>
+    <p>Click on me</p>
+    <p id="test">Click me too</p>
+    <button type="button">Click me</button> -->
+
+    <p id="test1">This is a paragraph</p>
+    <p id="test2">This is another paragraph</p>
+    <label for="demo">Input field:</label>
+    <input type="text" id="test3" value="Mickey Mouse" />
+    <br /><br />
+
+    <button type="button" id="btn1">Set Text</button>
+    <button type="button" id="btn2">Set html</button>
+    <button type="button" id="btn3">Set Val</button>
+  </body>
+</html>
